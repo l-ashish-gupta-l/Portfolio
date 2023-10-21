@@ -1,18 +1,54 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./style.css"
 const Navbar = () => {
-  return (
-      <div className='Navbar'>
-          <h2><a href="/">ASHISH</a></h2>
-          <ul className='sitemap'>
-              <li><h2><a href="#about">HOME</a></h2></li>
-              <li><h2><a href="#about">ABOUT</a></h2></li>
-              <li><h2><a href="#about">PORTFOLIO</a></h2></li>
-          </ul>
-          <h2><a href="/">CONTACT US</a></h2>
-    </div>
-          
-  )
+    let Time = new Date().toLocaleTimeString();
+ 
+    const [cTime, setcTime] = useState(Time)
+    const updatedtime = () => {
+          Time = new Date().toLocaleTimeString();
+        setcTime(Time);
+    }
+
+    setInterval(updatedtime, 1000)
+
+    
+
+
+
+
+    return (
+        <div className='Navbar'>
+            <div className="nav-divs">
+                <span className='nav-head'>NAME</span>
+                <h3><a href=''>ASHISH   GUPTA</a></h3>
+            </div>
+            <div className="nav-divs">
+                <span className='nav-head'>TIME</span>
+                <h3 className='Time'>{cTime}</h3>
+                <p>GMT+0530 (India Standard Time)</p>
+            </div>
+            <div className="nav-divs">
+                <span className='nav-head'>SITE MAP</span>
+                <h3>
+                    <a href=''>HOME    ,  </a>
+                    <a href=''>ABOUT     ,  </a><br/>
+                    <a href=''> EXPERTISE    ,  </a>
+                    <a href=''>PORTFOLIO    . </a>
+                </h3>
+            </div>
+            <div className="nav-divs">
+                <span className='nav-head'>CONTACT ME</span>
+                <h3>
+                    <a href=''>INSTAGRAM  ,  </a>
+                    <a href=''>GITHUB   ,  </a><br />
+                    <a href=''>TWITTE ,  </a>
+                    <a href=''>GMAIL   . </a>
+                </h3>
+            </div>
+
+        </div>
+
+    )
 }
 
 export default Navbar
