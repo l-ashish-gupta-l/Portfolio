@@ -1,0 +1,72 @@
+.Navbar{
+    
+    width: 100%;
+    min-height: 10vh;
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+a{
+color: white;
+text-decoration: none;
+font-weight: 100;
+}
+
+.sitemap {
+    display: flex;
+    gap: 20%;
+    list-style: none;
+    margin-right: 5%;
+}
+
+.herosection{
+    display: flex;
+    
+    
+}
+
+.lefthero{
+    min-width: 70%;
+ 
+    /* background-color: red; */
+    padding: 3% 0% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.righthero{
+    min-width: 30%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 3%;
+}
+.righthero p{
+    font-size: 1.3rem;
+}
+.heroheading{
+    font-weight: 500;
+    font-size: 4rem;
+    margin-bottom: 2%;
+}
+
+.heropara{
+    margin-top: 2%;
+    font-size: 1.5rem;
+    font-weight: 100;
+    max-width: 50% ;
+}
+
+.herobtn{
+    border: none;
+    margin-top: 7%;
+    max-width: 30%;
+    padding: 1%;
+
+    background: white;
+    
+}
