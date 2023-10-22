@@ -2,6 +2,9 @@ import React from 'react'
 import "./app.css"
 import Home from './components/Home'
 import Navbar from './components/Navbar'
+import Portfolio from './components/Portfolio'
+import About from './components/About'
+import Skills from './components/Skills'
 const App = () => {
   return (
     <div className='main'>
@@ -11,6 +14,9 @@ const App = () => {
       </svg>
       <div className='container'>
         <Home />
+        <Portfolio />
+        <About />
+        <Skills />
       </div>
     </div>
   )

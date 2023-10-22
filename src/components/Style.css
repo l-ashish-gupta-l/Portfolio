@@ -93,3 +93,80 @@ a{
     background: white;
 
 }
+
+.Page{
+    margin-top: 10%;
+    width: 100%;
+    /* background-color: #fff; */
+    /* border : 2px solid white */
+}
+
+.heading-portfolio{
+    margin-top: 2%;
+    font-weight: 100;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.heading-work{
+    font-weight: 100;
+        font-size: 5rem;
+        text-align: left;
+        
+}
+
+.work-div{
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    justify-content: space-between;
+    padding-right: 10%;
+    position: relative;
+    overflow: hidden;
+    /* background-color: aqua; */
+}
+
+.project-img{
+    position: absolute;
+     min-height: 100%;
+     /* top: 100%; */
+     right: 10%; 
+    width: 20%;
+    background-color: #fff;
+}
+
+.about-div{
+   
+    /* background-color: aqua; */
+    min-height:80vh ;
+    text-align: end;
+    
+}
+
+.about-heading{
+    font-size: 15rem;
+    font-weight: 600;
+}
+
+.about-subheading {
+    font-size: 5rem;
+    line-height:1;
+    margin-top: -2%;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+
+.about-text{
+    font-size: 3rem;
+    line-height: 1;
+    margin-top: 2%;
+    font-weight: 100;
+    width: 100%;
+}
+
+.skills{
+    margin-top: 10%;
+    width: 100%;
+    min-height: 90vh;
+    border : 2px solid white
+}
