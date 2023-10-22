@@ -7,27 +7,30 @@
     justify-content: space-between;
     align-items: center;
 }
-.nav-divs{
+
+.nav-divs {
     min-width: 15%;
     min-height: 8vh;
-   
+
     /* background-color: aqua; */
 }
-.nav-head{
+
+.nav-head {
     background-color: #fff;
     font-size: .8rem;
     color: #000;
     padding: 0% 3%;
-   
+
     border-radius: 2px;
 }
 
-a{
+a {
     text-decoration: none;
     color: #fff;
     font-weight: 100;
-    
+
 }
+
 .Time {
     text-decoration: none;
     color: #fff;
@@ -94,28 +97,28 @@ a{
 
 }
 
-.Page{
+.Page {
     margin-top: 10%;
     width: 100%;
     /* background-color: #fff; */
     /* border : 2px solid white */
 }
 
-.heading-portfolio{
+.heading-portfolio {
     margin-top: 2%;
     font-weight: 100;
     font-size: 2.5rem;
     text-align: left;
 }
 
-.heading-work{
+.heading-work {
     font-weight: 100;
-        font-size: 5rem;
-        text-align: left;
-        
+    font-size: 5rem;
+    text-align: left;
+
 }
 
-.work-div{
+.work-div {
     display: flex;
     align-items: center;
     height: 20vh;
@@ -126,37 +129,37 @@ a{
     /* background-color: aqua; */
 }
 
-.project-img{
+.project-img {
     position: absolute;
-     min-height: 100%;
-     /* top: 100%; */
-     right: 10%; 
+    min-height: 100%;
+    /* top: 100%; */
+    right: 10%;
     width: 20%;
     background-color: #fff;
 }
 
-.about-div{
-   
+.about-div {
+
     /* background-color: aqua; */
-    min-height:80vh ;
+    min-height: 80vh;
     text-align: end;
-    
+
 }
 
-.about-heading{
+.about-heading {
     font-size: 15rem;
     font-weight: 600;
 }
 
 .about-subheading {
     font-size: 5rem;
-    line-height:1;
+    line-height: 1;
     margin-top: -2%;
     font-weight: 400;
     margin-bottom: 2%;
 }
 
-.about-text{
+.about-text {
     font-size: 3rem;
     line-height: 1;
     margin-top: 2%;
@@ -164,9 +167,115 @@ a{
     width: 100%;
 }
 
-.skills{
+.skills {
     margin-top: 10%;
     width: 100%;
     min-height: 90vh;
-    border : 2px solid white
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.layout-btn {
+    /* border: .5px solid white; */
+    border-radius: 30px;
+    margin-bottom: 5%;  
+    /* margin-top: 5%; */
+    padding: 1% 1%;
+    display: flex;
+    width: 50%;
+    font-size: 1.5rem;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+.label{
+    font-size: 2rem;
+    font-weight: 100;
+}
+.switch {
+    margin-top: 2%;
+    margin-inline: 3%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    border : 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.switch-btn{
+    width: 10px;
+    height: 10px;
+    margin-left: -30px;
+    /* margin-left: -10%; */
+    border-radius: 50%;
+background-color: #fff;
+/* cursor: pointer; */
+}
+
+.skills-logo{
+    width: 30vw;
+    height: 50vh;
+    /* background-color: #fff; */
+    grid-gap: 20%;    
+    display: grid;
+    align-items: center;
+ grid-template-columns: 1fr 1fr 1fr ;
+    
+}
+img{
+    cursor: pointer;    
+}
+
+img:hover:nth-child(1) {
+  filter: drop-shadow( 0px 0px 10px yellow);
+transition: all .3s ease-in-out;
+scale: 1.2;
+
+}
+img:hover:nth-child(2) {
+  filter: drop-shadow( 0px 0px 20px #02bfff);
+transition: all .3s ease-in-out;
+scale: 1.2;
+}
+img:hover:nth-child(3) {
+  filter: drop-shadow( 0px 0px 20px #fff);
+transition: all .3s ease-in-out;
+scale: 1.2;
+}
+img:hover:nth-child(4) {
+  filter: drop-shadow( 0px 0px 20px rgb(255, 72, 0));
+transition: all .3s ease-in-out;
+scale: 1.2;
+}
+img:hover:nth-child(5) {
+  filter: drop-shadow( 0px 0px 20px #5900ff);
+transition: all .3s ease-in-out;
+scale: 1.2;
+}
+img:hover:nth-child(6) {
+  filter: drop-shadow( 0px 0px 20px #ff1302);
+transition: all .3s ease-in-out;
+scale: 1.2;
+}
+img:hover:nth-child(7) {
+  filter: drop-shadow( 0px 0px 20px #0228ff);
+transition: all .3s ease-in-out;
+scale: 1.2;
+}
+img:hover:nth-child(8) {
+  filter: drop-shadow( 0px 0px 20px #35ff02);
+transition: all .3s ease-in-out;
+scale: 1.2;
+}
+img:hover:nth-child(9) {
+  filter: drop-shadow( 0px 0px 20px #02ff39);
+transition: all .3s ease-in-out;
+scale: 1.2;
 }
