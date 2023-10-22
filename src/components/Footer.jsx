@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className='page'>
+        <div className='Page'>
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="15" viewBox="0 0 1440 12" fill="none">
                 <path d="M1430 7.03472L1440.02 11.7735L1439.98 0.226533L1430 5.03473L1430 7.03472ZM0.0034722 12L1431 7.03124L1431 5.03126L-0.0034722 10L0.0034722 12Z" fill="#ADADAD" />
             </svg>

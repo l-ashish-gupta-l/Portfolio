@@ -105,7 +105,7 @@ a {
 }
 
 .heading-portfolio {
-    margin-top: 2%;
+    margin-top: 15%;
     font-weight: 100;
     font-size: 2.5rem;
     text-align: left;
@@ -139,7 +139,7 @@ a {
 }
 
 .about-div {
-
+margin-top: 2%;
     /* background-color: aqua; */
     min-height: 80vh;
     text-align: end;
@@ -283,7 +283,7 @@ scale: 1.2;
 .skill-heading{
     font-size: 2rem;
     font-weight: 100;
-    margin-top: 8%;
+    margin-top: 10%;
 }
 
 .skill-para{
@@ -297,9 +297,13 @@ scale: 1.2;
     overflow: hidden;
     display: flex;
     font-size: 4rem;
+   
     line-height: 1;
     white-space: nowrap;
 
+}
+.talkme h1{
+    font-weight: 100;
 }
 
 
@@ -330,9 +334,9 @@ scale: 1.2;
     
 }
 .footer-ping{
-width: 60%;
+padding: 5%;
 height: 20%;
-font-size: 4rem;
+
 border-radius: 50px;
 
 border: 1px solid white;
@@ -343,6 +347,7 @@ align-items: center;
 
 
 .footer-ping h1{
+    font-size: 7rem;
     font-weight: 100;
     margin-top: -20px;
 }
