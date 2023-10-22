@@ -11,8 +11,10 @@ font-family: Monoma;
 
 .container{
   /* border: 2px solid white;   */
-  width : 80%;
+  min-width : 50%;
+  max-width : 80%;
   min-height: 80vh;
   margin-top: 2%;
   margin-inline: auto;
+    
 }

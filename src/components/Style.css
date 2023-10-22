@@ -98,7 +98,7 @@ a {
 }
 
 .Page {
-    margin-top: 10%;
+    /* margin-top: 10%; */
     width: 100%;
     /* background-color: #fff; */
     /* border : 2px solid white */
@@ -279,3 +279,77 @@ img:hover:nth-child(9) {
 transition: all .3s ease-in-out;
 scale: 1.2;
 }
+
+.skill-heading{
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 8%;
+}
+
+.skill-para{
+    font-size: 1.5rem;
+    width: 70%;
+    margin-top: 10px ;
+    margin-bottom: 8%;
+}
+
+.talkme{
+    overflow: hidden;
+    display: flex;
+    font-size: 4rem;
+    line-height: 1;
+    white-space: nowrap;
+
+}
+
+
+.footer-container{
+     width: 100%;
+        min-height: 80vh;
+        /* margin-top: 2%; */
+        margin-inline: auto;
+        display: flex;
+}
+.leftfooter{
+    width: 50%;
+   height: 80vh;
+    /* background-color: #0228ff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightfooter{
+    width: 50%;
+   height: 80vh;
+   gap: 10vh;
+    /* background-color: #0228ff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer-ping{
+width: 60%;
+height: 20%;
+font-size: 4rem;
+border-radius: 50px;
+
+border: 1px solid white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.footer-ping h1{
+    font-weight: 100;
+    margin-top: -20px;
+}
+
+.links h1 {
+    font-weight: 100;
+    
+}
+
+
