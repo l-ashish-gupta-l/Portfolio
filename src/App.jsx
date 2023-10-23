@@ -27,7 +27,8 @@ const App = () => {
     default: {
       x: `${mouse.x - 180}px`,
       y: `${mouse.y - 150}px`,
-      scale : 2
+      scale: 2,
+      
     }
   }
 
@@ -47,6 +48,7 @@ const App = () => {
         <motion.div
           variants={variant}
           animate="default"
+          
           className='cursor'
         >
         </motion.div>

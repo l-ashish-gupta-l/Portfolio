@@ -99,7 +99,7 @@ a {
 }
 
 .Page {
-    cursor: none;
+    /* cursor: none; */
     /* margin-top: 10%; */
     width: 100%;
     /* background-color: #fff; */
@@ -228,12 +228,11 @@ background-color: #fff;
     grid-gap: 20%;    
     display: grid;
     align-items: center;
+   
  grid-template-columns: 1fr 1fr 1fr ;
     
 }
-img{
-    cursor: pointer;    
-}
+
 
 img:hover:nth-child(1) {
   filter: drop-shadow( 0px 0px 10px yellow);

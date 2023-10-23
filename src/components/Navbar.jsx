@@ -10,12 +10,6 @@ const Navbar = () => {
     }
 
     setInterval(updatedtime, 1000)
-
-    
-
-
-
-
     return (
         <div className='Navbar'>
             <div className="nav-divs">
@@ -30,7 +24,7 @@ const Navbar = () => {
             <div className="nav-divs">
                 <span className='nav-head'>SITE MAP</span>
                 <h3>
-                    <a href=''>HOME    ,  </a>
+                    <a href='/'>HOME    ,  </a>
                     <a href=''>ABOUT     ,  </a><br/>
                     <a href=''> EXPERTISE    ,  </a>
                     <a href=''>PORTFOLIO    . </a>

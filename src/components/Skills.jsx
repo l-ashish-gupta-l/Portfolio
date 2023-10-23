@@ -62,19 +62,28 @@ const Skills = () => {
   const [index, setindex] = useState(0)
   const skillClicked = (key) => {
     setindex(key);
-  }
-
+   }
+  const [visibilty, setvisibilty] = useState({})
   let button = useRef()
-  let flag = 1;
+  const [flag, setflag] = useState(1)
   const btnCheck = () => {
     if (flag == 1) {
       button.current.style.transform = "translateX(30px)"
-      flag = 0;
+      setflag(0);
+      setvisibilty({
+        display:"none"
+      })
+      console.log('personal skill')
     } else {
       button.current.style.transform = "translateX(0px)"
-      flag = 1;
+      setflag(1);
+      console.log("technical skill")
+      setvisibilty({
+        display:"grid"
+      })
     }
   }
+ 
   return (
     <div className='Page'>
       <div className="skills">
@@ -87,7 +96,7 @@ const Skills = () => {
           </div><h1 className='label'><u>Personal Skills</u></h1>
 
         </div>
-        <div className="skills-logo">
+        <div className="skills-logo" style={visibilty}>
           <img src={jsLogo} onClick={() => skillClicked(1)} />
           <img src={reactLogo} onClick={() => skillClicked(2)} />
           <img src={nextLogo} onClick={() => skillClicked(3)} />
@@ -99,9 +108,9 @@ const Skills = () => {
           <img src={tailwindLogo} onClick={() => skillClicked(9)} />
         </div>
 
-        <h1 className='skill-heading'><u>{constant[index].title}</u> </h1>
+        <h1 className='skill-heading' style={visibilty}><u>{constant[index].title}</u> </h1>
 
-        <p className='skill-para'>{constant[index].para}</p>
+        <p className='skill-para'style={visibilty}>{constant[index].para}</p>
       </div>
     </div>
   )
