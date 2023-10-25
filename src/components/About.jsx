@@ -1,9 +1,28 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import "./Style.css"
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
+
 import { TypeAnimation } from 'react-type-animation';
 const About = () => {
+  const page = useRef(null)
+  useEffect(() => {
+    let el = page.current
+    gsap.to(el, {
+      opacity: 1,
+      duration: 2,
+      delay: 0.5 ,
+      scrollTrigger: {
+        trigger: el,
+        // markers: true,
+        start: "top center",
+        end: "bottom center"
+      }
+    })
+  }, [])
   return (
-    <div className='Page'>
+    <div className='Page' ref={page}>
       <div className="about-div">
         {/* <h1 className='about-heading'>about.</h1> */}
         <TypeAnimation
@@ -18,10 +37,10 @@ const About = () => {
           ]}
           wrapper="span"
           speed={50}
-          style={{ fontSize: '14rem', display: 'inline-block', marginBottom: '20px' }}
+          style={{ fontSize: '9em', display: 'inline-block', marginBottom: '20px' }}
           repeat={Infinity}
         />
-        <h2 className='about-subheading'>I am a Frontend Engineer <br /> based  in Uttar Pradesh, India.</h2>
+        <h2 className='about-subheading'>I am a Frontend Engineer <br /> based  India.</h2>
         <svg xmlns="http://www.w3.org/2000/svg" width="38%" height="12" viewBox="0 0 702 12" fill="none">
           <path d="M692 7L702 11.7735L702 0.226497L692 5L692 7ZM0 7L693 7L693 5L0 5L0 7Z" fill="#ADADAD" />
         </svg>

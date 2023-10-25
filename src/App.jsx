@@ -9,12 +9,12 @@ import Footer from './components/Footer'
 import { gsap } from "gsap";
 
 const App = () => {
+
   const [mouse, setmouse] = useState({
     x: null,
     y: null
   })
-  
-  const cursor = useRef(null)
+
   useEffect(() => {
     const mousemove = (e) => {
       setmouse({
@@ -26,21 +26,24 @@ const App = () => {
     window.addEventListener('mousemove', mousemove);
   }, [])
   
-  const cursorelement = cursor.current
-  gsap.to( cursorelement, {
-    x: mouse.x,
-    y: `${mouse.y-100}px`,
-    scale : 2 
+  let cursor = useRef(null)
+  useEffect(() => {
+    gsap.to(cursor, {
+      x: `${mouse.x}px`,
+      y: `${mouse.y}px`,
+      scale: 2
+    })
   })
+
+  const tl = gsap.timeline()
+
+
   return (
     <div className='main'>
-      <Navbar />
-      <svg xmlns="http://www.w3.org/2000/svg" width="full" height="15" viewBox="0 0 1350 12" fill="none">
-        <path d="M1340 7L1350 11.7735V0.226497L1340 5V7ZM0 7L1341 7V5L0 5L0 7Z" fill="#FFF4F4" />
-      </svg>
-        <div className='cursor' ref={cursor}>
-        </div>
       <div className='container'>
+        <Navbar />
+        <div className='cursor' ref={(e)=>{cursor = e}}>
+        </div>
         <Home />
         <Portfolio />
         <About />

@@ -1,9 +1,26 @@
-import React from 'react'
-
+import React, { useEffect, useRef, useState } from 'react'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 const Footer = () => {
+    const page = useRef(null)
+    useEffect(() => {
+        let el = page.current
+        gsap.to(el, {
+            opacity: 1,
+            duration: 2,
+            delay: 0.5,
+            scrollTrigger: {
+                trigger: el,
+                // markers: true,
+                start: "top center",
+                end: "bottom center"
+            }
+        })
+    }, [])
     return (
-        <div className='Page'>
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="15" viewBox="0 0 1440 12" fill="none">
+        <div className='Page' ref={page}>
+            <svg  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1440 12" fill="none">
                 <path d="M1430 7.03472L1440.02 11.7735L1439.98 0.226533L1430 5.03473L1430 7.03472ZM0.0034722 12L1431 7.03124L1431 5.03126L-0.0034722 10L0.0034722 12Z" fill="#ADADAD" />
             </svg>
             <div className="talkme">

@@ -1,35 +1,42 @@
 .Navbar {
- /* opacity: 0; */
-
-    width: 100%;
-    min-height: 10vh;
-    padding: 0% 10%;
+ opacity: 0;
+  width: 100%;
+   min-height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.svg{
+    opacity: 0;
 }
 
 .nav-divs {
     min-width: 15%;
     min-height: 8vh;
     opacity: 1;
-    /* background-color: aqua; */
+   
+
+}
+
+.nav-divs h3{
+    font-size: 1.2em;
 }
 
 .nav-head {
     background-color: #fff;
-    font-size: .8rem;
+    font-size: .8em;
     color: #000;
     padding: 0% 3%;
-
     border-radius: 2px;
+
 }
+
 
 a {
     text-decoration: none;
     color: #fff;
     font-weight: 100;
-
+      
 }
 
 .Time {
@@ -41,15 +48,13 @@ a {
 
 
 .herosection {
-    
     display: flex;
     position: relative;
+    opacity: 0;
 }
 
 .lefthero {
     min-width: 100%;
-
-    /* background-color: red; */
     padding: 3% 0%;
     display: flex;
     flex-direction: column;
@@ -57,9 +62,7 @@ a {
     /* align-items: center; */
 }
 
-/* .Herospan{
-    color: #8F8F8F;
-} */
+
 .righthero {
     /* background-color: aqua; */
     align-self: flex-end;
@@ -71,20 +74,20 @@ a {
 }
 
 .righthero p {
-    font-size: 1.3rem;
+    font-size: 1em;
     text-align: end;
 
 }
 
 .heroheading {
     font-weight: 500;
-    font-size: 4.5rem;
+    font-size: 4em;
     margin-bottom: 2%;
 }
 
 .heropara {
     margin-top: 2%;
-    font-size: 1.5rem;
+    font-size: 1.2em;
     font-weight: 100;
     max-width: 50%;
 }
@@ -94,21 +97,20 @@ a {
     margin-top: 7%;
     max-width: 30%;
     padding: 1%;
-
+    font-size: .8em;
     background: white;
 
 }
 
 .Page {
     /* cursor: none; */
-    /* margin-top: 10%; */
+    margin-top: 13%;
     width: 100%;
-    /* background-color: #fff; */
-    /* border : 2px solid white */
+    opacity: 0;
 }
 
 .heading-portfolio {
-    margin-top: 15%;
+    /* margin-top: 15%; */
     font-weight: 100;
     font-size: 2.5rem;
     text-align: left;
@@ -155,7 +157,7 @@ margin-top: 2%;
 }
 
 .about-subheading {
-    font-size: 5rem;
+    font-size: 4em;
     line-height: 1;
     margin-top: -2%;
     font-weight: 400;
@@ -163,7 +165,7 @@ margin-top: 2%;
 }
 
 .about-text {
-    font-size: 3rem;
+    font-size: 2em;
     line-height: 1;
     margin-top: 2%;
     font-weight: 100;
@@ -174,28 +176,24 @@ margin-top: 2%;
     margin-top: 10%;
     width: 100%;
     min-height: 90vh;
-    /* border: 2px solid white; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+   
     align-items: center;
 }
 
 .layout-btn {
-    /* border: .5px solid white; */
     border-radius: 30px;
-    margin-bottom: 5%;  
-    /* margin-top: 5%; */
+    margin-bottom: 2%;  
     padding: 1% 1%;
     display: flex;
     width: 50%;
     font-size: 1.5rem;
-    /* display: flex; */
     align-items: center;
     justify-content: center;
 }
 .label{
-    font-size: 2rem;
+    font-size: 1em;
     font-weight: 100;
 }
 .switch {
@@ -223,15 +221,18 @@ background-color: #fff;
 }
 
 .skills-logo{
-    width: 30vw;
-    height: 50vh;
-    /* background-color: #fff; */
-    grid-gap: 20%;    
+    width:50%;
+    height: 60vh;
+    grid-gap: 10%;    
     display: grid;
     align-items: center;
-   
  grid-template-columns: 1fr 1fr 1fr ;
     
+}
+.skills-logo img{
+    margin-inline: auto;
+    width: 80px;
+    height: 80px;
 }
 
 
@@ -283,23 +284,22 @@ scale: 1.2;
 }
 
 .skill-heading{
-    font-size: 2rem;
+    font-size: 1.5em;
     font-weight: 100;
-    margin-top: 10%;
+    margin-top: 2%;
 }
 
 .skill-para{
-    font-size: 1.5rem;
+    font-size: 1rem;
     width: 70%;
     margin-top: 10px ;
-    margin-bottom: 8%;
+   
 }
 
 .talkme{
     overflow: hidden;
     display: flex;
-    font-size: 4rem;
-   
+    font-size: 3em;
     line-height: 1;
     white-space: nowrap;
 
@@ -311,14 +311,13 @@ scale: 1.2;
 
 .footer-container{
      width: 100%;
-        min-height: 80vh;
-        /* margin-top: 2%; */
+        min-height: 70vh;
         margin-inline: auto;
         display: flex;
 }
 .leftfooter{
     width: 50%;
-   height: 80vh;
+   height: 70vh;
     /* background-color: #0228ff; */
     display: flex;
     justify-content: center;
@@ -326,8 +325,8 @@ scale: 1.2;
 }
 .rightfooter{
     width: 50%;
-   height: 80vh;
-   gap: 10vh;
+   height: 70vh;
+   gap: 5vh;
     /* background-color: #0228ff; */
     display: flex;
     flex-direction: column;
@@ -336,12 +335,11 @@ scale: 1.2;
     
 }
 .footer-ping{
-padding: 5%;
-height: 20%;
-
+width: 30%;
+padding: 5px 8px;
 border-radius: 50px;
-
 border: 1px solid white;
+
 display: flex;
 justify-content: center;
 align-items: center;
@@ -349,14 +347,14 @@ align-items: center;
 
 
 .footer-ping h1{
-    font-size: 7rem;
+    font-size: 3em;
     font-weight: 100;
-    margin-top: -20px;
+   margin-top: -10px;
 }
 
 .links h1 {
     font-weight: 100;
-    
+    font-size: 1.5em;
 }
 
 

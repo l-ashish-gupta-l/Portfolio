@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState ,} from 'react'
 import './Style.css'
 import reactLogo from '../assest/React.svg'
 import htmlLogo from '../assest/html.svg'
@@ -9,13 +9,30 @@ import tailwindLogo from '../assest/tailwind.svg'
 import nodeLogo from '../assest/node.svg'
 import gitLogo from '../assest/git.svg'
 import reduxLogo from '../assest/redux.svg'
-
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 
 
 
 
 const Skills = () => {
+  const page = useRef(null)
+  useEffect(() => {
+    let el = page.current
+    gsap.to(el, {
+      opacity: 1,
+      duration: 2,
+      delay: 0.5,
+      scrollTrigger: {
+        trigger: el,
+        // markers: true,
+        start: "top center",
+        end: "bottom center"
+      }
+    })
+  }, [])
   let constant = [
     {
       title: "Click icon to see more...",
@@ -85,16 +102,14 @@ const Skills = () => {
   }
  
   return (
-    <div className='Page'>
+    <div className='Page' ref={page}>
       <div className="skills">
         <div className="layout-btn">
           <h1 className='label'><u>Technology Stack</u></h1>
           <div className="switch" onClick={btnCheck}>
             <div className='switch-btn' ref={button} >
-
             </div>
           </div><h1 className='label'><u>Personal Skills</u></h1>
-
         </div>
         <div className="skills-logo" style={visibilty}>
           <img src={jsLogo} onClick={() => skillClicked(1)} />
@@ -107,9 +122,7 @@ const Skills = () => {
           <img src={nodeLogo} onClick={() => skillClicked(8)} />
           <img src={tailwindLogo} onClick={() => skillClicked(9)} />
         </div>
-
         <h1 className='skill-heading' style={visibilty}><u>{constant[index].title}</u> </h1>
-
         <p className='skill-para'style={visibilty}>{constant[index].para}</p>
       </div>
     </div>
