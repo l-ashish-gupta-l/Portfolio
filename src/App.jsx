@@ -6,52 +6,41 @@ import Portfolio from './components/Portfolio'
 import About from './components/About'
 import Skills from './components/Skills'
 import Footer from './components/Footer'
-import { motion } from 'framer-motion'
+import { gsap } from "gsap";
+
 const App = () => {
   const [mouse, setmouse] = useState({
     x: null,
     y: null
   })
-
+  
+  const cursor = useRef(null)
   useEffect(() => {
     const mousemove = (e) => {
       setmouse({
         x: e.clientX,
-        y: e.clientY
+        y: e.clientY,
+        
       })
     }
     window.addEventListener('mousemove', mousemove);
   }, [])
-
-  const variant = {
-    default: {
-      x: `${mouse.x - 180}px`,
-      y: `${mouse.y - 150}px`,
-      scale: 2,
-      
-    }
-  }
-
-
-
+  
+  const cursorelement = cursor.current
+  gsap.to( cursorelement, {
+    x: mouse.x,
+    y: `${mouse.y-100}px`,
+    scale : 2 
+  })
   return (
-    <div className='main'    >
+    <div className='main'>
       <Navbar />
       <svg xmlns="http://www.w3.org/2000/svg" width="full" height="15" viewBox="0 0 1350 12" fill="none">
         <path d="M1340 7L1350 11.7735V0.226497L1340 5V7ZM0 7L1341 7V5L0 5L0 7Z" fill="#FFF4F4" />
       </svg>
-
-      <div className='container'
-
-      >
-
-        <motion.div
-          variants={variant}
-          animate="default"
-          
-          className='cursor'
-        >
-        </motion.div>
+        <div className='cursor' ref={cursor}>
+        </div>
+      <div className='container'>
         <Home />
         <Portfolio />
         <About />
