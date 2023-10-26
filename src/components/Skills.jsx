@@ -17,7 +17,14 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Personalcard = () => {
   return (
-   
+    
+    <div className="personal-card">
+      <h1>Hi there!</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, et? Aliquam, accusamus quam nam id maiores modi placeat laboriosam tenetur autem omnis, harum ut? Aspernatur.</p>
+    </div>
+ 
+    
+  
   )
 }
 
@@ -101,7 +108,7 @@ const Skills = () => {
         display:"none"
       })
       setPersonalvisibilty({
-        display:"block"
+        display:"grid"
       })
     } else {
       button.current.style.transform = "translateX(0px)"
@@ -142,6 +149,12 @@ const Skills = () => {
          
         <div className='persnal-stack' style={Personalvisibilty} >
           <Personalcard/>
+          <Personalcard/>
+          <Personalcard/>
+          <Personalcard/>
+          <Personalcard/>
+          <Personalcard/>
+          
         </div>
 
 
