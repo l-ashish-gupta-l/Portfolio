@@ -15,6 +15,13 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 
+const Personalcard = () => {
+  return (
+   
+  )
+}
+
+
 
 
 const Skills = () => {
@@ -80,7 +87,10 @@ const Skills = () => {
   const skillClicked = (key) => {
     setindex(key);
    }
-  const [visibilty, setvisibilty] = useState({})
+  const [Techvisibilty, setvisibilty] = useState({})
+  const [Personalvisibilty, setPersonalvisibilty] = useState({
+    display: "none"
+  })
   let button = useRef()
   const [flag, setflag] = useState(1)
   const btnCheck = () => {
@@ -90,13 +100,18 @@ const Skills = () => {
       setvisibilty({
         display:"none"
       })
-      console.log('personal skill')
+      setPersonalvisibilty({
+        display:"block"
+      })
     } else {
       button.current.style.transform = "translateX(0px)"
       setflag(1);
       console.log("technical skill")
       setvisibilty({
         display:"grid"
+      })
+      setPersonalvisibilty({
+        display: "none"
       })
     }
   }
@@ -111,7 +126,7 @@ const Skills = () => {
             </div>
           </div><h1 className='label'><u>Personal Skills</u></h1>
         </div>
-        <div className="skills-logo" style={visibilty}>
+        <div className="skills-logo" style={Techvisibilty}>
           <img src={jsLogo} onClick={() => skillClicked(1)} />
           <img src={reactLogo} onClick={() => skillClicked(2)} />
           <img src={nextLogo} onClick={() => skillClicked(3)} />
@@ -122,8 +137,15 @@ const Skills = () => {
           <img src={nodeLogo} onClick={() => skillClicked(8)} />
           <img src={tailwindLogo} onClick={() => skillClicked(9)} />
         </div>
-        <h1 className='skill-heading' style={visibilty}><u>{constant[index].title}</u> </h1>
-        <p className='skill-para'style={visibilty}>{constant[index].para}</p>
+        <h1 className='skill-heading' style={Techvisibilty}><u>{constant[index].title}</u> </h1>
+        <p className='skill-para' style={Techvisibilty}>{constant[index].para}</p>
+         
+        <div className='persnal-stack' style={Personalvisibilty} >
+          <Personalcard/>
+        </div>
+
+
+
       </div>
     </div>
   )

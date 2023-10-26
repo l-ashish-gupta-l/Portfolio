@@ -229,6 +229,14 @@ background-color: #fff;
  grid-template-columns: 1fr 1fr 1fr ;
     
 }
+
+
+.persnal-stack{
+     display: block;
+    width: 100%;
+    height:  70vh; 
+    background-color: #0228ff;
+}
 .skills-logo img{
     margin-inline: auto;
     width: 80px;
