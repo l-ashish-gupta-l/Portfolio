@@ -329,15 +329,15 @@ scale: 1.2;
 .talkme{
     overflow: hidden;
     display: flex;
-    font-size: 3em;
+    font-size: 2em;
     line-height: 1;
     white-space: nowrap;
-   /* margin-left: -100%;     */
-    width: 120%;
-    background-color: #0228ff;
+    width: 90%;
 }
 .talkme h1{
     margin-right: 30px;
+    margin-bottom: 5px;
+
 }
 .talkmacontainer{
 

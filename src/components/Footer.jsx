@@ -1,35 +1,24 @@
 import React, { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
+import { color } from 'framer-motion'
 gsap.registerPlugin(ScrollTrigger)
 const Footer = () => {
     const talkme = useRef(null)
     const page = useRef(null)
     useEffect(() => {
         const tl = gsap.timeline();
-    //     tl.fromTo(talkme.current, {
-    //         xPercent: -100,
-    //         duration: 5,
-    //         repeat: -1,
-    //         ease :"linear"
-    //     }, {
-    //         xPercent: 100,
-    //         duration: 5,
-    //         repeat: -1,
-    //         ease: "linear",
-    //         yoyo: true, // Reverses the animation
-            
-    //   })
+  
         
         tl.fromTo(
             talkme.current,
             {
-                xPercent: -100,
+                xPercent: -105,
                 ease: "linear",
             },
             {
-                xPercent: 100,
-                duration: 5, // Adjust the duration as needed
+                xPercent: 105,
+                duration: 10, // Adjust the duration as needed
                 // repeatDelay: 0, 
                 // yoyo : true,
                 repeat: -1, // Infinite repeat
@@ -68,11 +57,23 @@ const Footer = () => {
             </svg>
             
             <div className="talkme" ref={talkme}>
-                <h1>Talk Me ... </h1>
-                <h1>Talk Me ... </h1>
-                <h1>Talk Me ... </h1>
-                <h1>Talk Me ... </h1>
-                {/* <h1>Talk Me ... </h1> */}
+                    <h1>Let's <span style={{
+                        backgroundColor: "white",
+                        color: "black",
+                        fontSize: "1.2em",
+                        padding: "15px",
+                        marginBottom : "5px",
+                     margin: "5px"
+                    }}>Connect</span> And <span style={{
+                        backgroundColor: "white",
+                        color: "black",
+                        fontSize: "1.2em",
+                        padding: "15px",
+                        marginBottom: "5px",
+                            margin: "5px",
+                      
+                    }}>Create</span>  Together!</h1>
+                
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="15" viewBox="0 0 1440 12" fill="none">
                 <path d="M1430 7.03472L1440.02 11.7735L1439.98 0.226533L1430 5.03473L1430 7.03472ZM0.0034722 12L1431 7.03124L1431 5.03126L-0.0034722 10L0.0034722 12Z" fill="#ADADAD" />
