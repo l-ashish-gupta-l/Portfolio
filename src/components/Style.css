@@ -242,12 +242,16 @@ background-color: #fff;
 }
 
 .personal-card p{
-    text-align: center;
+    text-align: left;
     margin-top: 5%;
+}
+.personal-card h1{
+    text-align: left;
+  
 }
 
 .persnal-stack{
-   
+   opacity: 1;
     /* background-color: #0228ff; */
 align-items: center;
     display: grid;
@@ -328,11 +332,19 @@ scale: 1.2;
     font-size: 3em;
     line-height: 1;
     white-space: nowrap;
-
+   /* margin-left: -100%;     */
+    width: 120%;
+    background-color: #0228ff;
 }
 .talkme h1{
-    font-weight: 100;
+    margin-right: 30px;
 }
+.talkmacontainer{
+
+    overflow-x: hidden;
+}
+
+
 
 
 .footer-container{

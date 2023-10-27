@@ -3,8 +3,50 @@ import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 const Footer = () => {
+    const talkme = useRef(null)
     const page = useRef(null)
     useEffect(() => {
+        const tl = gsap.timeline();
+    //     tl.fromTo(talkme.current, {
+    //         xPercent: -100,
+    //         duration: 5,
+    //         repeat: -1,
+    //         ease :"linear"
+    //     }, {
+    //         xPercent: 100,
+    //         duration: 5,
+    //         repeat: -1,
+    //         ease: "linear",
+    //         yoyo: true, // Reverses the animation
+            
+    //   })
+        
+        tl.fromTo(
+            talkme.current,
+            {
+                xPercent: -100,
+                ease: "linear",
+            },
+            {
+                xPercent: 100,
+                duration: 5, // Adjust the duration as needed
+                // repeatDelay: 0, 
+                // yoyo : true,
+                repeat: -1, // Infinite repeat
+                ease: "linear",
+            }
+        );
+
+
+        // tl.to(talkme.current
+        //     , {
+        //         xPercent: 100,
+        //         duration: 2,
+        //         ease:"Linear",
+        //         repeat : -1
+        // })
+
+
         let el = page.current
         gsap.to(el, {
             opacity: 1,
@@ -20,18 +62,22 @@ const Footer = () => {
     }, [])
     return (
         <div className='Page' ref={page}>
-            <svg  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1440 12" fill="none">
+            <div className="talkmacontainer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 12" fill="none">
                 <path d="M1430 7.03472L1440.02 11.7735L1439.98 0.226533L1430 5.03473L1430 7.03472ZM0.0034722 12L1431 7.03124L1431 5.03126L-0.0034722 10L0.0034722 12Z" fill="#ADADAD" />
             </svg>
-            <div className="talkme">
+            
+            <div className="talkme" ref={talkme}>
                 <h1>Talk Me ... </h1>
                 <h1>Talk Me ... </h1>
                 <h1>Talk Me ... </h1>
                 <h1>Talk Me ... </h1>
+                {/* <h1>Talk Me ... </h1> */}
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="15" viewBox="0 0 1440 12" fill="none">
                 <path d="M1430 7.03472L1440.02 11.7735L1439.98 0.226533L1430 5.03473L1430 7.03472ZM0.0034722 12L1431 7.03124L1431 5.03126L-0.0034722 10L0.0034722 12Z" fill="#ADADAD" />
-            </svg>
+                </svg>
+            </div>
             <div className='footer-container'>
                 <div className="leftfooter">
                     <div className='footer-ping'>

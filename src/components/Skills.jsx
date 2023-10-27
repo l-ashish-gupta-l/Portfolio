@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState ,} from 'react'
+import React, { useEffect, useRef, useState, } from 'react'
 import './Style.css'
 import reactLogo from '../assest/React.svg'
 import htmlLogo from '../assest/html.svg'
@@ -15,16 +15,16 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 
-const Personalcard = () => {
+const Personalcard = (prop) => {
   return (
-    
+
     <div className="personal-card">
-      <h1>Hi there!</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, et? Aliquam, accusamus quam nam id maiores modi placeat laboriosam tenetur autem omnis, harum ut? Aspernatur.</p>
+      <h1>{prop.personaltitile}</h1>
+      <p>{prop.personalpara}</p>
     </div>
- 
-    
-  
+
+
+
   )
 }
 
@@ -93,7 +93,9 @@ const Skills = () => {
   const [index, setindex] = useState(0)
   const skillClicked = (key) => {
     setindex(key);
-   }
+  }
+  const skillslogo = useRef(null)
+  const personalanimation =useRef(null) 
   const [Techvisibilty, setvisibilty] = useState({})
   const [Personalvisibilty, setPersonalvisibilty] = useState({
     display: "none"
@@ -105,24 +107,35 @@ const Skills = () => {
       button.current.style.transform = "translateX(30px)"
       setflag(0);
       setvisibilty({
-        display:"none"
+        display: "none"
       })
       setPersonalvisibilty({
-        display:"grid"
+        display: "grid"
       })
+      gsap.from(personalanimation.current, {
+        opacity: 0,
+        duration: 1,
+        
+     })
     } else {
       button.current.style.transform = "translateX(0px)"
       setflag(1);
       console.log("technical skill")
       setvisibilty({
-        display:"grid"
+        display: "grid"
       })
       setPersonalvisibilty({
         display: "none"
       })
+      
+      gsap.from(skillslogo.current, {
+        opacity: 0,
+        duration: 1,
+
+      })
     }
   }
- 
+
   return (
     <div className='Page' ref={page}>
       <div className="skills">
@@ -133,7 +146,7 @@ const Skills = () => {
             </div>
           </div><h1 className='label'><u>Personal Skills</u></h1>
         </div>
-        <div className="skills-logo" style={Techvisibilty}>
+        <div className="skills-logo" style={Techvisibilty}  ref={skillslogo}>
           <img src={jsLogo} onClick={() => skillClicked(1)} />
           <img src={reactLogo} onClick={() => skillClicked(2)} />
           <img src={nextLogo} onClick={() => skillClicked(3)} />
@@ -144,17 +157,31 @@ const Skills = () => {
           <img src={nodeLogo} onClick={() => skillClicked(8)} />
           <img src={tailwindLogo} onClick={() => skillClicked(9)} />
         </div>
-        <h1 className='skill-heading' style={Techvisibilty}><u>{constant[index].title}</u> </h1>
-        <p className='skill-para' style={Techvisibilty}>{constant[index].para}</p>
-         
-        <div className='persnal-stack' style={Personalvisibilty} >
-          <Personalcard/>
-          <Personalcard/>
-          <Personalcard/>
-          <Personalcard/>
-          <Personalcard/>
-          <Personalcard/>
-          
+        <h1 className='skill-heading'  style={Techvisibilty}><u>{constant[index].title}</u> </h1>
+        <p className='skill-para'  style={Techvisibilty}>{constant[index].para}</p>
+
+        <div className='persnal-stack' ref={personalanimation} style={Personalvisibilty} >
+          <Personalcard
+            personaltitile="Enhanced Problem Solving"
+            personalpara="As a frontend engineer, I excel in problem-solving. I address compatibility and performance challenges with innovative solutions, ensuring user-friendly and visually appealing web experiences. My passion drives my success." />
+          <Personalcard
+            personaltitile="My Esports Journey"
+            personalpara="In my esports journey, I've developed a range of skills beyond gaming. I've learned teamwork, effective communication, and adaptability. These abilities, gained through dedicated practice, have been vital to my success in the competitive gaming world."
+          />
+            <Personalcard personaltitile="Working Well with Others: Client Interaction Skills"
+            personalpara="I am the developer behind Rising Nature's website, where client interactions play a pivotal role in fostering our web platform's growth."
+            />
+          <Personalcard
+            personaltitile="Effective Time Management Skills"
+            personalpara="I'm adept at time management. I carefully plan tasks, ensuring efficient use of time and meeting deadlines consistently. This organized approach results in effective and successful task completion, promoting productivity."
+          />
+          <Personalcard personaltitile="Smart Thinking: Making Wise Choices"
+            personalpara="Smart thinking is my forte. I analyze situations diligently, making wise choices. This approach guarantees successful decision-making, productivity, and positive outcomes across various facets of life."
+          />
+          <Personalcard personaltitile="Always Learning for Growth"
+            personalpara="Continuous learning is the practice of gaining knowledge throughout life. It leads to personal growth, improved skills, and staying relevant in a changing world, making you a valuable asset in various contexts."
+          />
+
         </div>
 
 

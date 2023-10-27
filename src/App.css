@@ -17,6 +17,7 @@ font-family: Monoma;
   margin-top: 2%;
   margin-inline: auto;
     position: relative;
+   overflow-x: hidden;
 }
 
 .cursor {
