@@ -1,3 +1,35 @@
+a {
+    position: relative;
+
+}
+
+
+a::before {
+    content: "";
+    border: 1px solid white;
+    position: absolute;
+    left: 0px;
+top : 100%; 
+    /* Change 'top' to 'bottom' */
+    width: 0;
+    /* Set a default width (e.g., 0) */
+    height: 2px;
+    /* Specify the height of the border */
+    background-color: white;
+    /* Set the background color to match the border color */
+    transition: width 0.3s;
+    /* Add a transition for smooth animation */
+}
+
+
+a:hover::before {
+    width: 100%;
+    
+    /* Expand the width on hover */
+}
+
+
+
 .Navbar {
  opacity: 0;
   width: 100%;
@@ -126,7 +158,41 @@ a {
 
 }
 
-.work-div {
+.work-div1{
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    justify-content: space-between;
+    padding-right: 10%;
+    position: relative;
+    overflow: hidden;
+    /* background-color: aqua; */
+
+}
+
+.work-div1:hover .project-img{
+    top: 10%;
+    transition: all 0.5s linear;
+}
+.work-div2:hover .project-img{
+    top: 10%;
+    transition: all 0.3s linear;
+}
+.work-div3:hover .project-img{
+    top: 10%;
+    transition: all 0.5s linear;
+}
+.work-div2{
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    justify-content: space-between;
+    padding-right: 10%;
+    position: relative;
+    overflow: hidden;
+    /* background-color: aqua; */
+}
+.work-div3{
     display: flex;
     align-items: center;
     height: 20vh;
@@ -140,10 +206,26 @@ a {
 .project-img {
     position: absolute;
     min-height: 100%;
-    /* top: 100%; */
+    top: 100%;
     right: 10%;
     width: 20%;
-    background-color: #fff;
+    
+    /* background-color: #fff; */
+}
+.project-img a img{
+    object-fit: cover;
+    width: 110%;
+    height: 110%;
+    object-position: center;
+    border-radius: 5px;
+
+}
+.project-img a img:hover{
+    scale: 1.2;
+    filter: drop-shadow(0px 0px 10px rgb(248, 248, 248));
+        transition: all .3s ease-in-out;
+       
+
 }
 
 .about-div {
@@ -269,48 +351,48 @@ align-items: center;
 }
 
 
-img:hover:nth-child(1) {
+.skills-logo img:hover:nth-child(1) {
   filter: drop-shadow( 0px 0px 10px yellow);
 transition: all .3s ease-in-out;
 scale: 1.2;
 
 }
-img:hover:nth-child(2) {
+.skills-logo img:hover:nth-child(2) {
   filter: drop-shadow( 0px 0px 20px #02bfff);
 transition: all .3s ease-in-out;
 scale: 1.2;
 }
-img:hover:nth-child(3) {
+.skills-logo img:hover:nth-child(3) {
   filter: drop-shadow( 0px 0px 20px #fff);
 transition: all .3s ease-in-out;
 scale: 1.2;
 }
-img:hover:nth-child(4) {
+.skills-logo img:hover:nth-child(4) {
   filter: drop-shadow( 0px 0px 20px rgb(255, 72, 0));
 transition: all .3s ease-in-out;
 scale: 1.2;
 }
-img:hover:nth-child(5) {
+.skills-logo img:hover:nth-child(5) {
   filter: drop-shadow( 0px 0px 20px #5900ff);
 transition: all .3s ease-in-out;
 scale: 1.2;
 }
-img:hover:nth-child(6) {
+.skills-logo img:hover:nth-child(6) {
   filter: drop-shadow( 0px 0px 20px #ff1302);
 transition: all .3s ease-in-out;
 scale: 1.2;
 }
-img:hover:nth-child(7) {
+.skills-logo img:hover:nth-child(7) {
   filter: drop-shadow( 0px 0px 20px #0228ff);
 transition: all .3s ease-in-out;
 scale: 1.2;
 }
-img:hover:nth-child(8) {
+.skills-logo img:hover:nth-child(8) {
   filter: drop-shadow( 0px 0px 20px #35ff02);
 transition: all .3s ease-in-out;
 scale: 1.2;
 }
-img:hover:nth-child(9) {
+.skills-logo img:hover:nth-child(9) {
   filter: drop-shadow( 0px 0px 20px #02ff39);
 transition: all .3s ease-in-out;
 scale: 1.2;

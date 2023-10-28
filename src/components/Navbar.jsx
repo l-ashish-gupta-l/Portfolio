@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "./style.css"
 import gsap from 'gsap';
-import { Tween } from 'gsap/gsap-core';
 
 
 const Navbar = () => {

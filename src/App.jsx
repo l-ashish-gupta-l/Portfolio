@@ -7,9 +7,10 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Footer from './components/Footer'
 import { gsap } from "gsap";
-import { Route, Routes } from 'react-router-dom';
+
 
 const App = () => {
+  
 
   const [mouse, setmouse] = useState({
     x: null,
@@ -40,9 +41,7 @@ const App = () => {
 
 
   return (<>
-    <Routes>
-      {/* <Route path="/home" Component={Home} > </Route> */}
-    </Routes>
+   
     <div className='main'>
       <div className='container'>
         <Navbar />
