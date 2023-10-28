@@ -10,7 +10,13 @@ import { gsap } from "gsap";
 
 
 const App = () => {
-  
+  const ishovered = () => {
+    cursor.style.display = "none";
+    cursor.style.cursor = "pointer";
+  }
+  const leavehovered = () => {
+    cursor.style.display = "block";
+  }
 
   const [mouse, setmouse] = useState({
     x: null,
@@ -41,18 +47,18 @@ const App = () => {
 
 
   return (<>
-   
+
     <div className='main'>
-      <div className='container'>
-        <Navbar />
+      <div className='container'  >
         <div className='cursor' ref={(e) => { cursor = e }}>
         </div>
-        <Home />
-        <Portfolio />
+        <Navbar hover={ishovered} unhover={leavehovered} />
+        <Home hover={ishovered} unhover={leavehovered} />
+        <Portfolio hover={ishovered} unhover={leavehovered} />
         <About />
         <Skills />
       </div>
-      <Footer />
+      <Footer hover={ishovered} unhover={leavehovered} />
     </div >
   </>
   )

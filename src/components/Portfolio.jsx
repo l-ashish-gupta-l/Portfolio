@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import './Style.css'
+import './Media.css'
 import gsap from 'gsap'
 import Risingnature from "../assest/Risingnature.png"
 import Usability from "../assest/usabilty hub.png"

@@ -1,10 +1,11 @@
 import React, { useEffect, useRef } from 'react'
 import "./Style.css"
+import './Media.css'
 import { TypeAnimation } from 'react-type-animation';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
-const Home = () => {
+const Home = (props) => {
     let Hero = useRef(null)
 
     useEffect(() => {
@@ -36,6 +37,7 @@ const Home = () => {
                     speed={50}
                     style={{ fontSize: '4em', display: 'inline-block', marginTop: '-30px' }}
                     repeat={Infinity}
+                    className='dynamic-hero-text'
                 />
                 <svg xmlns="http://www.w3.org/2000/svg" width="309" height="12" viewBox="0 0 309 12" fill="none">
                     <path d="M299 7L309 11.7735L309 0.226497L299 5L299 7ZM-6.05814e-10 7L300 7L300 5L6.05814e-10 5L-6.05814e-10 7Z" fill="#ADADAD" />
@@ -44,8 +46,8 @@ const Home = () => {
                 <p className='heropara'>As a front-end developer, my mission is to create interfaces that perfectly align with the desired design, while constructing resilient and user-friendly web applications that are easy to maintain.</p>
 
 
-                <a className='herobtn' href='#Footer'><h2>GET IN TOUCH WITH ME</h2></a>
-                <div className="righthero"><p>BASED IN INDIA <br />
+                <h1 ><a className='herobtn' onMouseEnter={props.hover} onMouseLeave={props.unhover} href='#Footer'>GET IN TOUCH WITH ME</a></h1>
+             <div className="righthero"><p>BASED IN INDIA <br />
                     AVAILABLE FOR FREELANCE PROJECT</p></div>
             </div>
 

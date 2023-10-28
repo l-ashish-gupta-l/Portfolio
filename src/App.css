@@ -15,20 +15,31 @@ font-family: Monoma;
   max-width : 80%;
   min-height: 80vh;
   margin-top: 2%;
-  margin-inline: auto;
+ margin-inline: auto;
     position: relative;
 }
 
 .cursor {
-  /* z-index: -99; */
+  /* z-index: 99; */
   position: fixed;
   top: 0%;
   left: 0%;
   width: 10px;
   pointer-events: none;
   height: 10px;
-  background-color: #fff;
+  background-color: white;
   mix-blend-mode: lighten;
   border-radius: 50%;
   filter: drop-shadow(0px 0px 5px white);
+}
+
+@media (max-width:640px) {
+  .main{
+    width: 100%;
+  }
+  
+  
+  .container{
+    width: 1440px;
+  }
 }

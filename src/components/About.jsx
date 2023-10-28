@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import "./Style.css"
+import './Media.css'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
@@ -12,7 +13,7 @@ const About = () => {
     gsap.to(el, {
       opacity: 1,
       duration: 2,
-      delay: 0.5 ,
+      delay: 0.5,
       scrollTrigger: {
         trigger: el,
         // markers: true,
@@ -33,12 +34,13 @@ const About = () => {
             2000,
             'Get to Know Me?',
             2000
-            
+
           ]}
           wrapper="span"
           speed={50}
           style={{ fontSize: '9em', display: 'inline-block', marginBottom: '20px' }}
           repeat={Infinity}
+          className='about-dynamic-text'
         />
         <h2 className='about-subheading'>I am a Frontend Engineer <br /> based  India.</h2>
         <svg xmlns="http://www.w3.org/2000/svg" width="38%" height="12" viewBox="0 0 702 12" fill="none">

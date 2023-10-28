@@ -9,6 +9,7 @@ import tailwindLogo from '../assest/tailwind.svg'
 import nodeLogo from '../assest/node.svg'
 import gitLogo from '../assest/git.svg'
 import reduxLogo from '../assest/redux.svg'
+import './Media.css'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
