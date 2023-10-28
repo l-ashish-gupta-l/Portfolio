@@ -7,6 +7,7 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Footer from './components/Footer'
 import { gsap } from "gsap";
+import { Route, Routes } from 'react-router-dom';
 
 const App = () => {
 
@@ -20,12 +21,12 @@ const App = () => {
       setmouse({
         x: e.clientX,
         y: e.clientY,
-        
+
       })
     }
     window.addEventListener('mousemove', mousemove);
   }, [])
-  
+
   let cursor = useRef(null)
   useEffect(() => {
     gsap.to(cursor, {
@@ -38,11 +39,14 @@ const App = () => {
   const tl = gsap.timeline()
 
 
-  return (
+  return (<>
+    <Routes>
+      {/* <Route path="/home" Component={Home} > </Route> */}
+    </Routes>
     <div className='main'>
       <div className='container'>
         <Navbar />
-        <div className='cursor' ref={(e)=>{cursor = e}}>
+        <div className='cursor' ref={(e) => { cursor = e }}>
         </div>
         <Home />
         <Portfolio />
@@ -50,7 +54,8 @@ const App = () => {
         <Skills />
       </div>
       <Footer />
-    </div>
+    </div >
+  </>
   )
 }
 

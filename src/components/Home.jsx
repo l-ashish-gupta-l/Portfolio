@@ -44,7 +44,7 @@ const Home = () => {
                 <p className='heropara'>As a front-end developer, my mission is to create interfaces that perfectly align with the desired design, while constructing resilient and user-friendly web applications that are easy to maintain.</p>
 
 
-                <button className='herobtn'><h2>GET IN TOUCH WITH ME</h2></button>
+                <a className='herobtn' href='#Footer'><h2>GET IN TOUCH WITH ME</h2></a>
                 <div className="righthero"><p>BASED IN INDIA <br />
                     AVAILABLE FOR FREELANCE PROJECT</p></div>
             </div>

@@ -22,7 +22,7 @@ const About = () => {
     })
   }, [])
   return (
-    <div className='Page' ref={page}>
+    <div className='Page' ref={page} id='About'>
       <div className="about-div">
         {/* <h1 className='about-heading'>about.</h1> */}
         <TypeAnimation

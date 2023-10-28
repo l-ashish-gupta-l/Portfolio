@@ -137,7 +137,7 @@ const Skills = () => {
   }
 
   return (
-    <div className='Page' ref={page}>
+    <div className='Page' ref={page} id="Skills">
       <div className="skills">
         <div className="layout-btn">
           <h1 className='label'><u>Technology Stack</u></h1>

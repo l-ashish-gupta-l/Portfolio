@@ -38,7 +38,7 @@ const Navbar = () => {
             <div className='Navbar' ref={el => { Nav = el }}>
                 <div className="nav-divs" >
                     <span className='nav-head'>NAME</span>
-                    <h3><a href=''>ASHISH   GUPTA</a></h3>
+                    <h3><a href='/'>ASHISH   GUPTA</a></h3>
                 </div>
                 <div className="nav-divs" >
                     <span className='nav-head' >TIME</span>
@@ -49,18 +49,18 @@ const Navbar = () => {
                     <span className='nav-head' >SITE MAP</span>
                     <h3>
                         <a href='/'>HOME    ,  </a>
-                        <a href=''>ABOUT     ,  </a><br />
-                        <a href=''> EXPERTISE    ,  </a>
-                        <a href=''>PORTFOLIO    . </a>
+                        <a href='#About'>ABOUT     ,  </a><br />
+                        <a href='#Skills'> EXPERTISE    ,  </a>
+                        <a href='#Portfolio'>PORTFOLIO    . </a>
                     </h3>
                 </div>
                 <div className="nav-divs" >
                     <span className='nav-head'>CONTACT ME</span>
                     <h3>
-                        <a href=''>INSTAGRAM  ,  </a>
-                        <a href=''>GITHUB   ,  </a><br />
-                        <a href=''>TWITTE ,  </a>
-                        <a href=''>GMAIL   . </a>
+                        <a href='https://instagram.com/l_ashish_gupta_l?igshid=NzZlODBkYWE4Ng==' target='_blank'>INSTAGRAM  ,  </a>
+                        <a href='https://github.com/l-ashish-gupta-l' target='_blank'>GITHUB   ,  </a><br />
+                        <a href='https://twitter.com/Lashish_gupta_l' target='_blank'>X ,  </a>
+                        <a href='https://www.linkedin.com/in/ashish-gupta-22a478135/' target='_blank'>LINKEDIN   . </a>
                     </h3>
                 </div>
             </div>
