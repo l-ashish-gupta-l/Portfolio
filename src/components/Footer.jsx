@@ -83,31 +83,31 @@ const Footer = (props) => {
             <div className='footer-container'>
                 <div className="leftfooter">
                     <div className='footer-ping'>
-                        <h1 onMouseEnter={props.hover} onMouseLeave={props.unhover} ><a href='mailto:ashish3072002@gmail.com'>PING ME</a></h1>
+                        <h1  ><a href='mailto:ashish3072002@gmail.com'>PING ME</a></h1>
                     </div>
                     <div className='footer-ping'>
-                        <h1 onMouseEnter={props.hover} onMouseLeave={props.unhover}><a href={resume} target='_blank'>RESUME</a></h1>
+                        <h1 ><a href={resume} target='_blank'>RESUME</a></h1>
                     </div>
                 </div>
                 <div className="rightfooter">
                     <div className='links'>
-                        <h1 onMouseEnter={props.hover} onMouseLeave={props.unhover}><a href='https://www.linkedin.com/in/ashish-gupta-22a478135/' target='_blank'>LINKEDIN</a></h1>
+                        <h1 ><a href='https://www.linkedin.com/in/ashish-gupta-22a478135/' target='_blank'>LINKEDIN</a></h1>
                         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="15" viewBox="0 0 582 12" fill="none">
                             <path d="M571.007 7.07107L581.04 11.7734L580.958 0.226692L570.992 5.07112L571.007 7.07107ZM0.00710462 11.1279L572.006 7.06397L571.992 5.06402L-0.00710462 9.12795L0.00710462 11.1279Z" fill="#ADADAD" />
                         </svg>
                     </div>
                     <div className='links'>
-                        <h1 onMouseEnter={props.hover} onMouseLeave={props.unhover}><a href='https://instagram.com/l_ashish_gupta_l?igshid=NzZlODBkYWE4Ng==' target='_blank'>INSTAGRAM</a></h1>                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="15" viewBox="0 0 582 12" fill="none">
+                        <h1 ><a href='https://instagram.com/l_ashish_gupta_l?igshid=NzZlODBkYWE4Ng==' target='_blank'>INSTAGRAM</a></h1>                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="15" viewBox="0 0 582 12" fill="none">
                             <path d="M571.007 7.07107L581.04 11.7734L580.958 0.226692L570.992 5.07112L571.007 7.07107ZM0.00710462 11.1279L572.006 7.06397L571.992 5.06402L-0.00710462 9.12795L0.00710462 11.1279Z" fill="#ADADAD" />
                         </svg>
                     </div>
                     <div className='links'>
-                        <h1 onMouseEnter={props.hover} onMouseLeave={props.unhover}><a href='https://github.com/l-ashish-gupta-l' target='_blank'>GITHUB</a></h1>                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="15" viewBox="0 0 582 12" fill="none">
+                        <h1 ><a href='https://github.com/l-ashish-gupta-l' target='_blank'>GITHUB</a></h1>                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="15" viewBox="0 0 582 12" fill="none">
                             <path d="M571.007 7.07107L581.04 11.7734L580.958 0.226692L570.992 5.07112L571.007 7.07107ZM0.00710462 11.1279L572.006 7.06397L571.992 5.06402L-0.00710462 9.12795L0.00710462 11.1279Z" fill="#ADADAD" />
                         </svg>
                     </div>
                     <div className='links'>
-                        <h1 onMouseEnter={props.hover} onMouseLeave={props.unhover}><a href='https://twitter.com/Lashish_gupta_l' target='_blank'>X ( TWITTER )</a></h1>                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="15" viewBox="0 0 582 12" fill="none">
+                        <h1 ><a href='https://twitter.com/Lashish_gupta_l' target='_blank'>X ( TWITTER )</a></h1>                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="15" viewBox="0 0 582 12" fill="none">
                             <path d="M571.007 7.07107L581.04 11.7734L580.958 0.226692L570.992 5.07112L571.007 7.07107ZM0.00710462 11.1279L572.006 7.06397L571.992 5.06402L-0.00710462 9.12795L0.00710462 11.1279Z" fill="#ADADAD" />
                         </svg>
                     </div>

@@ -38,7 +38,10 @@ const Navbar = (props) => {
             <div className='Navbar' ref={el => { Nav = el }}>
                 <div className="nav-divs" >
                     <span className='nav-head'>NAME</span>
-                    <h3 onMouseEnter={props.hover} onMouseLeave={props.unhover}><a href='/'>ASHISH   GUPTA</a></h3>
+                    <h3
+                        
+                    >
+                        <a href='/'>ASHISH   GUPTA</a></h3>
                 </div>
                 <div className="nav-divs" >
                     <span className='nav-head' >TIME</span>
@@ -48,19 +51,19 @@ const Navbar = (props) => {
                 <div className="nav-divs" >
                     <span className='nav-head' >SITE MAP</span>
                     <h3>
-                        <a href='/' onMouseEnter={props.hover} onMouseLeave={props.unhover}>HOME    ,  </a>
-                        <a href='#About' onMouseEnter={props.hover} onMouseLeave={props.unhover}>ABOUT     ,  </a><br />
-                        <a href='#Skills' onMouseEnter={props.hover} onMouseLeave={props.unhover}> EXPERTISE    ,  </a>
-                        <a href='#Portfolio' onMouseEnter={props.hover} onMouseLeave={props.unhover}>PORTFOLIO    . </a>
+                        <a href='/' >HOME    ,  </a>
+                        <a href='#About' >ABOUT     ,  </a><br />
+                        <a href='#Skills' > EXPERTISE    ,  </a>
+                        <a href='#Portfolio' >PORTFOLIO    . </a>
                     </h3>
                 </div>
                 <div className="nav-divs" >
                     <span className='nav-head'>CONTACT ME</span>
                     <h3>
-                        <a onMouseEnter={props.hover} onMouseLeave={props.unhover}  href='https://instagram.com/l_ashish_gupta_l?igshid=NzZlODBkYWE4Ng==' target='_blank'>INSTAGRAM  ,  </a>
-                        <a onMouseEnter={props.hover} onMouseLeave={props.unhover} href='https://github.com/l-ashish-gupta-l' target='_blank'>GITHUB   ,  </a><br />
-                        <a onMouseEnter={props.hover} onMouseLeave={props.unhover} href='https://twitter.com/Lashish_gupta_l' target='_blank'>X ,  </a>
-                        <a onMouseEnter={props.hover} onMouseLeave={props.unhover} href='https://www.linkedin.com/in/ashish-gupta-22a478135/' target='_blank'>LINKEDIN   . </a>
+                        <a   href='https://instagram.com/l_ashish_gupta_l?igshid=NzZlODBkYWE4Ng==' target='_blank'>INSTAGRAM  ,  </a>
+                        <a  href='https://github.com/l-ashish-gupta-l' target='_blank'>GITHUB   ,  </a><br />
+                        <a  href='https://twitter.com/Lashish_gupta_l' target='_blank'>X ,  </a>
+                        <a  href='https://www.linkedin.com/in/ashish-gupta-22a478135/' target='_blank'>LINKEDIN   . </a>
                     </h3>
                 </div>
             </div>

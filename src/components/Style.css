@@ -1,4 +1,23 @@
+a::after{
+    content: "";
+    border: 1px solid white;
+    position: absolute;
+    left: -0%;
+    top: 105%;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    
+}
 
+a{
+    position: relative;
+}
+
+a:hover::after{
+    display: block;
+ opacity: 1;
+}
 .Navbar {
  opacity: 0;
   width: 100%;
@@ -108,7 +127,7 @@ a {
 }
 
 .Page {
-    /* cursor: none; */
+    cursor: none;
     margin-top: 13%;
     width: 100%;
     opacity: 0;
@@ -264,6 +283,7 @@ margin-top: 2%;
     border-radius: 50%;
 background-color: #fff;
 cursor: pointer;
+transition: all 0.3s ease-in-out;
 }
 
 .skills-logo{
@@ -281,12 +301,17 @@ cursor: pointer;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #151414;
   border-radius: 30px;
   border : 2px dotted white ;
-    /* background-color: #ff1302; */
+  transition: all 2s ease-in-out;
     padding: 5% ;
 }
-
+.card:hover{
+    scale: 1.2;
+    filter:drop-shadow(0px 0px 10px white) ;
+    transition: all 0.5s ease-in-out;
+}
 .personal-card p{
     text-align: left;
     margin-top: 5%;
@@ -417,7 +442,7 @@ scale: 1.2;
 }
 .footer-ping{
 width: 30%;
-padding: 5px 8px;
+padding: 3px 0px;
 border-radius: 50px;
 border: 1px solid white;
 
@@ -428,9 +453,10 @@ align-items: center;
 
 
 .footer-ping h1{
-    font-size: 3em;
+    font-size: 2em;
+    line-height: 1.4em;
     font-weight: 100;
-   margin-top: -10px;
+    
 }
 
 .links h1 {

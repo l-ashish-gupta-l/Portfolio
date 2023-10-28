@@ -18,10 +18,11 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Personalcard = (prop) => {
   return (
-
+    <div className='card'>
     <div className="personal-card">
       <h1>{prop.personaltitile}</h1>
       <p>{prop.personalpara}</p>
+      </div>
     </div>
 
 

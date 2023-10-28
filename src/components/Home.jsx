@@ -45,7 +45,7 @@ const Home = (props) => {
                 <p className='heropara'>As a front-end developer, my mission is to create interfaces that perfectly align with the desired design, while constructing resilient and user-friendly web applications that are easy to maintain.</p>
 
 
-                <h1 ><a className='herobtn' onMouseEnter={props.hover} onMouseLeave={props.unhover} href='#Footer'>GET IN TOUCH WITH ME</a></h1>
+                <h1 ><a className='herobtn'  href='#Footer'>GET IN TOUCH WITH ME</a></h1>
              <div className="righthero"><p>BASED IN INDIA <br />
                     AVAILABLE FOR FREELANCE PROJECT</p></div>
             </div>
