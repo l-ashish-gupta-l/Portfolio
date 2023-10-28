@@ -145,7 +145,8 @@ const Skills = () => {
           <div className="switch" onClick={btnCheck}>
             <div className='switch-btn' ref={button} >
             </div>
-          </div><h1 className='label'><u>Personal Skills</u></h1>
+          </div>
+          <h1 className='label' id='personal-skills'><u>Personal Skills</u></h1>
         </div>
         <div className="skills-logo" style={Techvisibilty}  ref={skillslogo}>
           <img src={jsLogo} onClick={() => skillClicked(1)} />

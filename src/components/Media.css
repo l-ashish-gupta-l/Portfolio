@@ -72,7 +72,91 @@
     line-height: 1.2em;
 }
 
+.layout-btn{
+    width: 80%;
+}
+.label{
+    width: 100%;
+    font-size: 2em;
+    font-weight: 900;
+    margin-top: 30%;
+}
+#personal-skills{
+    display: none;
+}
 
+.switch{
+    height: 10px;
+    display: none;
+}
+
+.switch-btn{
+    width: 5px;
+    height: 5px;
+    margin-left: -15px;
+}
+.skills-logo{
+    width: 100%;
+    grid-gap:  15px;
+}
+.skills-logo img{
+    width: 60px;
+    height: 60px;
+}
+.skill-heading{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.skill-para{
+    font-size: 1.2em;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.talkmacontainer{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.talkme{
+    width: 150%;
+}
+
+.talkme h1{
+    font-size: .8em;
+}
+.leftfooter
+{
+    height: 40vh;
+}
+.rightfooter
+{
+    height: 40vh;
+    gap: 10px;
+}
+.footer-ping{
+    width: 50%;
+    height: 8%;
+}
+
+.footer-ping h1{
+font-size: 1em;
+margin-top: 0;
+}
+
+
+.links{
+    width: 100%;
+}
+
+.links h1{
+    font-size: 1em;
+}
 
 
 
