@@ -50,7 +50,7 @@ const Skills = () => {
   }, [])
   let constant = [
     {
-      title: "Click icon to see more...",
+      title: "Click Icon To See More...",
       para: "",
     },
     {

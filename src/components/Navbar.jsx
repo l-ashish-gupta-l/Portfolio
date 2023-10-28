@@ -65,7 +65,7 @@ const Navbar = (props) => {
                 </div>
             </div>
             <svg className="svg" ref={(e) => { svg = e }} xmlns="http://www.w3.org/2000/svg" width="100%" height="15" viewBox="0 0 1350 12" fill="none">
-                <path d="M1340 7L1350 11.7735V0.226497L1340 5V7ZM0 7L1341 7V5L0 5L0 7Z" fill="#FFF4F4" />
+                <path d="M1340 7L1350 11.7735V0.226497L1340 5V7ZM0 7L1341 7V5L0 5L0 7Z" fill=" #ADADAD" />
             </svg>
         </>
     )
