@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import './Media.css'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import resume from "../assest/Ashish gupta resume.pdf"
 gsap.registerPlugin(ScrollTrigger)
-const Footer = (props) => {
+const Footer = () => {
     const talkme = useRef(null)
     const page = useRef(null)
     useEffect(() => {
@@ -19,23 +19,14 @@ const Footer = (props) => {
             },
             {
                 xPercent: 105,
-                duration: 10, // Adjust the duration as needed
-                // repeatDelay: 0, 
-                // yoyo : true,
-                repeat: -1, // Infinite repeat
+                duration: 10, 
+                repeat: -1, 
                 ease: "linear",
             }
         );
 
 
-        // tl.to(talkme.current
-        //     , {
-        //         xPercent: 100,
-        //         duration: 2,
-        //         ease:"Linear",
-        //         repeat : -1
-        // })
-
+       
 
         let el = page.current
         gsap.to(el, {

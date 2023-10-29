@@ -1,281 +1,189 @@
+@media (max-width:640px),
+(max-width: 1024px) {
+    .cursor {
+        display: none;
+    }
 
-@media (max-width:640px),(max-width: 1024px)  {
-.cursor{
-    display: none;
-}
-.Page{
-    margin-top: 30%;
-}
+    .Page {
+        margin-top: 30%;
+    }
 
-.nav-divs:nth-child(2){
-    display: none;
+    .nav-divs:nth-child(2) {
+        display: none;
 
-}
-.nav-divs:nth-child(4){
-    display: none;
+    }
 
-}
-.heroheading{
-    font-size: 2.5em;
-}
-.dynamic-hero-text{
-    font-size: 3em !important;
-    margin-top: 0 !important;
-}
+    .nav-divs:nth-child(4) {
+        display: none;
 
-.herobtn{
-    font-size: .5em;
-    min-width:100%;
-    margin-top: 10%;
-}
-.righthero p{
-    font-size: .8em;
-    margin-bottom: 30%;
-}
-.heading-portfolio{
-    font-size: 1.5em;
-}
-.work-div1{
-    height: 40vh;
+    }
+
+    .heroheading {
+        font-size: 2.5em;
+    }
+
+    .dynamic-hero-text {
+        font-size: 3em !important;
+        margin-top: 0 !important;
+    }
+
+    .herobtn {
+        font-size: .5em;
+        min-width: 100%;
+        margin-top: 10%;
+    }
+
+    .righthero p {
+        font-size: .8em;
+        margin-bottom: 30%;
+    }
+
+    .heading-portfolio {
+        font-size: 1.5em;
+    }
+
+    .work-div1 {
+        height: 40vh;
         flex-direction: column;
-    
-}
-.work-div2{
-    height: 40vh;
-    flex-direction: column;
-    
-}
-.work-div3{
-    height: 40vh;
+
+    }
+
+    .work-div2 {
+        height: 40vh;
         flex-direction: column;
-}
-
-.heading-work {
-    font-size: 3em;
-    width: 110%;
-    text-align: center;
-    
-  
-
-    text-decoration: underline;
-}
-
-.project-img{
-    top: -15% !important;
-    width: 250px;
-    height: 150px;
-      left:5px;
-    position: relative;
-
-}
-
-.about-dynamic-text{
-    font-weight: 800;
-    font-size: 4em !important;
-    margin-bottom: 5px !important;
-}
-.about-subheading{
-    font-size: 3em;
-}
-.about-div p{
-    font-size: 1.5em;
-    line-height: 1.2em;
-}
-
-.layout-btn{
-    width: 80%;
-}
-.label{
-    width: 100%;
-    font-size: 2em;
-    font-weight: 900;
-    margin-top: 30%;
-}
-#personal-skills{
-    display: none;
-}
 
-.switch{
-    height: 10px;
-    display: none;
-}
-
-.switch-btn{
-    width: 5px;
-    height: 5px;
-    margin-left: -15px;
-}
-.skills-logo{
-    width: 100%;
-    grid-gap:  15px;
-}
-.skills-logo img{
-    width: 60px;
-    height: 60px;
-}
-.skill-heading{
-    text-align: center;
-    font-size: 2em;
-    font-weight: 500;
-}
-
-.skill-para{
-    font-size: 1.2em;
-    margin-top: 15px;
-    width: 100%;
-    text-align: center;
-}
-
-.talkmacontainer{
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.talkme{
-    width: 150%;
-}
-
-.talkme h1{
-    font-size: .8em;
-}
-.leftfooter
-{
-    height: 40vh;
-}
-.rightfooter
-{
-    height: 40vh;
-    gap: 10px;
-}
-.footer-ping{
-    width: 50%;
-    height: 8%;
-}
-
-.footer-ping h1{
-font-size: 1em;
-margin-top: 0;
-}
-
-
-.links{
-    width: 100%;
-}
-
-.links h1{
-    font-size: 1em;
-}
-
-
-@media only screen and (min-width: 768px) {
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
+
+    .work-div3 {
+        height: 40vh;
+        flex-direction: column;
+    }
+
+    .heading-work {
+        font-size: 3em;
+        width: 110%;
+        text-align: center;
+
+
+
+        text-decoration: underline;
+    }
+
+    .project-img {
+        top: -15% !important;
+        width: 250px;
+        height: 150px;
+        left: 5px;
+        position: relative;
+
+    }
+
+    .about-dynamic-text {
+        font-weight: 800;
+        font-size: 4em !important;
+        margin-bottom: 5px !important;
+    }
+
+    .about-subheading {
+        font-size: 3em;
+    }
+
+    .about-div p {
+        font-size: 1.5em;
+        line-height: 1.2em;
+    }
+
+    .layout-btn {
+        width: 80%;
+    }
+
+    .label {
+        width: 100%;
+        font-size: 2em;
+        font-weight: 900;
+        margin-top: 30%;
+    }
+
+    #personal-skills {
+        display: none;
+    }
+
+    .switch {
+        height: 10px;
+        display: none;
+    }
+
+    .switch-btn {
+        width: 5px;
+        height: 5px;
+        margin-left: -15px;
+    }
+
+    .skills-logo {
+        width: 100%;
+        grid-gap: 15px;
+    }
+
+    .skills-logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skill-heading {
+        text-align: center;
+        font-size: 2em;
+        font-weight: 500;
+    }
+
+    .skill-para {
+        font-size: 1.2em;
+        margin-top: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .talkmacontainer {
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .talkme {
+        width: 150%;
+    }
+
+    .talkme h1 {
+        font-size: .8em;
+    }
+
+    .leftfooter {
+        height: 40vh;
+    }
+
+    .rightfooter {
+        height: 40vh;
+        gap: 10px;
+    }
+
+    .footer-ping {
+        width: 50%;
+        height: 8%;
+    }
+
+    .footer-ping h1 {
+        font-size: 1em;
+        margin-top: 0;
+    }
+
+
+    .links {
+        width: 100%;
+    }
+
+    .links h1 {
+        font-size: 1em;
+    }
 
 }
-
